@@ -13,7 +13,10 @@
     <p style="text-align:center" class="p-3 mb-2 bg-info text-white"> <strong>Clarity Precedes Success </strong></p>
     <p class="date, h5, text-center" id="date">Date</p>
     <p class="time, h5, text-center" id="time">Time</p>
-    <p>Current Date and Time is <span id='date-time'></span>.</p>
+    <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
     <div class="options" >
       <button type="button" name="jobDuties" class="btn btn-link"> <a style="color: white;" href="jobDuties.html">Job Duties </a></button>
       <button type="button" name="profile" class="btn btn-link"> <a style="color: white;" href="https://www.linkedin.com/in/aakishev/">Profile
