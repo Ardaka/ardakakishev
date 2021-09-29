@@ -13,8 +13,6 @@
     <p style="text-align:center" class="p-3 mb-2 bg-info text-white"> <strong>Clarity Precedes Success </strong></p>
     <p class="date, h5, text-center" id="date">Date</p>
     <p class="time, h5, text-center" id="time">Time</p>
-    <p>Date/Time:</p>
-    <p id="datetime"></p>
     <div class="options" >
       <button type="button" name="jobDuties" class="btn btn-link"> <a style="color: white;" href="jobDuties.html">Job Duties </a></button>
       <button type="button" name="profile" class="btn btn-link"> <a style="color: white;" href="https://www.linkedin.com/in/aakishev/">Profile
@@ -23,6 +21,7 @@
       <button type="button" name="personalProj" class="btn btn-link"><a style="color: white;" href="https://github.com/Ardaka/Mathematics">Projects
         </a></button>
       <button type="button" name="git" class="btn btn-link"><a style="color: white;" href="https://github.com/ardaka">GitHub Repository</a></button>
+      <button type="button" name="linkedin" class="btn btn-link"><a style="color: white;" href="https://www.linkedin.com/in/aakishev/">LinkedIn</a></button>
       <button type="button" name="contact" class="btn btn-link"><a style="color: white;" href="contact.html">Contact Me </a></button>
     </div>
   </div>
@@ -96,6 +95,9 @@
     </tbody>
   </table>
   <hr>
+  <script>
+		document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+	</script>
 
 </body>
 
