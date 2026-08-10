@@ -1,105 +1,284 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> ☕ Ardak's Personal Site </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ardak Akishev | Senior SDET &amp; Test Automation Architect</title>
+  <meta name="description" content="Senior SDET and Test Automation Architect building maintainable automation for enterprise web, legacy desktop, mobile, API, and data-intensive platforms.">
+  <meta name="theme-color" content="#07111f">
+  <link rel="canonical" href="https://ardaka.github.io/ardakakishev/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ardaka.github.io/ardakakishev/">
+  <meta property="og:title" content="Ardak Akishev | Senior SDET &amp; Test Automation Architect">
+  <meta property="og:description" content="Engineering confidence into every release through scalable automation, thoughtful architecture, and disciplined quality engineering.">
+  <meta property="og:image" content="https://ardaka.github.io/ardakakishev/og.png">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ardak Akishev | Senior SDET &amp; Test Automation Architect">
+  <meta name="twitter:description" content="Engineering confidence into every release.">
+  <meta name="twitter:image" content="https://ardaka.github.io/ardakakishev/og.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="time.js" defer></script>
 </head>
 <body>
-  <div class="header, p-3 mb-2 bg-secondary text-white">
-    <p style="text-align:center" class="p-3 mb-2 bg-info text-white"> <strong>Clarity Precedes Success </strong></p>
-    <p class="date, h5, text-center" id="date">Date</p>
-    <p class="time, h5, text-center" id="time">Time</p>
-    <div class="options" >
-      <button type="button" name="jobDuties" class="btn btn-link"> <a style="color: white;" href="jobDuties.html">Job Duties </a></button>
-      <button type="button" name="hobbies" class="btn btn-link"><a style="color: white;" href="hobbies.html">Hobbies </a> </button>
-      <button type="button" name="personalProj" class="btn btn-link"><a style="color: white;" href="https://github.com/Ardaka/Mathematics">Projects
-        </a></button>
-      <button type="button" name="git" class="btn btn-link"><a style="color: white;" href="https://github.com/ardaka">GitHub Repository</a></button>
-      <button type="button" name="linkedin" class="btn btn-link"><a style="color: white;" href="https://www.linkedin.com/in/aakishev/">LinkedIn</a></button>
-      <button type="button" name="contact" class="btn btn-link"><a style="color: white;" href="contact.html">Contact Me </a></button>
-    </div>
-  </div>
-  <table cellspacing="10">
-    <tr>
-      <td><img
-          src="ARDAK.AKISHEV.jpg"
-          alt="Ardak profile" class="photo"></td>
-      <td>
-        <h2> Ardak Akishev </h2>
-        <p class="designation"><strong> Software Test Automation Engineer </strong></p>
-        <p class="description"><strong>Over 5 years of qualified Software Engineer in Test with experience in web applications (UI) and web services (Rest API). Expertise in building test automation frameworks in Selenium from scratch. My responsibilities have varied across different aspects of Software Testing such as Functional, Automation, Integration, User Acceptance, and Performance Testing. Advocate for technologies, frameworks, design patterns, and development. Able to work both independently and as a team member.
-         </strong> </p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3 style="text-align:center">Work Experience</h3>
-  <table border="2" width="400" align="center" cellspacing="10">
-    <thead class="table-primary">
-      <th>Company</th>
-      <th>Experience</th>
-    </thead>
-    <tbody>
-      <tr class="table-active">
-        <td><a href="https://www.capstonepub.com/">Capstone</a></td>
-        <td>6 months</td>
-      </tr>
-      <tr class="table-active">
-        <td>Altus Engineering</a></td>
-        <td>4+ years</td>
-      </tr>
-      <tr class="table-active">
-        <td><a href="https://www.teliacompany.com/en/">Telia</a></td>
-        <td>10+ years</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <table border="2" cellspacing="20" class="skills" align="center">
-    <thead>
-      <h3 style="text-align:center;">Skills</h3>
-    </thead>
-    <tbody>
-      <tr class="table-primary">
-        <td>JAVA</td>
-        <td>JavaScript</td>
-        <td>Selenium</td>
-        <td>CyPress</td>
-      </tr >
-      <tr class="table-secondary">
-        <td>TestCafe</td>
-        <td>Mocha</td>
-        <td>Postman</td>
-        <td>GitHub</td>
-      </tr>
-      <tr class="table-danger">
-        <td>Jenkins</td>
-        <td>JMeter</td>
-        <td>MySQL</td>
-        <td>BrowserStack</td>
-      </tr>
-      <tr class="table-success">
-        <td>SauceLabs</td>
-        <td>Jira</td>
-        <td>AgileScrum</td>
-        <td>TestLink</td>
-      </tr>
-      
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    </tbody>
-  </table>
-  <hr>
-  <footer> 
-  <div class="header, p-3 mb-2 bg-secondary text-white">
-    <label for="copyright" class="labelfooter">allright</label>
-  </div>
-  <script type="text/javascript" src="time.js">
-  </script>
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Ardak Akishev — home">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span class="brand-text">Ardak Akishev<small>Quality Engineering</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#impact">Impact</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a class="nav-cta" href="#contact">Let’s talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Jacksonville, FL · Senior quality engineering</p>
+          <h1>Engineering confidence into <span>every release.</span></h1>
+          <p class="hero-lead">I’m Ardak Akishev, a Senior SDET and Test Automation Architect who turns complex systems into reliable, maintainable delivery pipelines.</p>
+          <p class="hero-support">From statewide modernization and financial services to publishing and predictive maintenance, I build automation that helps teams move faster without lowering the quality bar.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#impact">Explore my impact <span aria-hidden="true">↘</span></a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/aakishev/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="trust-list" aria-label="Core strengths">
+            <li>Framework architecture</li>
+            <li>Modernization validation</li>
+            <li>CI/CD integration</li>
+          </ul>
+        </div>
+
+        <aside class="profile-panel reveal" aria-label="Professional snapshot">
+          <div class="portrait-wrap">
+            <img src="ARDAK.AKISHEV.jpg" width="300" height="224" alt="Portrait of Ardak Akishev">
+            <span class="portrait-badge">Senior SDET</span>
+          </div>
+          <div class="profile-body">
+            <p class="micro-label">Current focus</p>
+            <h2>Automation architecture for complex enterprise systems</h2>
+            <div class="signal-row"><span>Web</span><span>API</span><span>Mobile</span><span>Desktop</span></div>
+          </div>
+          <div class="profile-code" aria-label="Quality engineering principles">
+            <span><i>01</i> Build for maintainability</span>
+            <span><i>02</i> Trace tests to real risk</span>
+            <span><i>03</i> Keep humans accountable</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="shell metrics reveal" aria-label="Career highlights">
+        <div class="metric"><strong>8+</strong><span>years in software<br>quality engineering</span></div>
+        <div class="metric"><strong>15+</strong><span>years across technology<br>&amp; engineering operations</span></div>
+        <div class="metric"><strong>4</strong><span>delivery surfaces:<br>web, API, mobile, desktop</span></div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="impact">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow dark">Selected impact</p>
+            <h2>Quality engineering that moves the work forward.</h2>
+          </div>
+          <p>I pair hands-on automation with systems thinking: understand the business risk, shape the framework, and make results useful to the people shipping the product.</p>
+        </div>
+
+        <div class="impact-grid">
+          <article class="impact-card impact-featured reveal">
+            <div class="impact-index">01</div>
+            <div>
+              <p class="card-kicker">Nevada DMV modernization · NTT DATA</p>
+              <h3>Validated a mission-critical platform across legacy and modern architecture.</h3>
+              <p>Led automation engineering across driver licensing, CDL, vehicle registration, transactions, search, general services, and device-integrated workflows during a PowerBuilder-to-Blazor modernization.</p>
+              <ul class="inline-tags" aria-label="Technologies"><li>C#/.NET</li><li>Playwright</li><li>Reqnroll / SpecFlow</li><li>Azure DevOps</li></ul>
+            </div>
+          </article>
+
+          <article class="impact-card reveal">
+            <div class="impact-index">02</div>
+            <p class="card-kicker">Framework architecture</p>
+            <h3>Built a scalable three-layer BDD automation foundation.</h3>
+            <p>Designed reusable page objects, shared operations, context patterns, validation helpers, test-data conventions, and reporting standards for consistent delivery.</p>
+          </article>
+
+          <article class="impact-card reveal">
+            <div class="impact-index">03</div>
+            <p class="card-kicker">Mobile &amp; web · Financial services</p>
+            <h3>Expanded release confidence across devices and channels.</h3>
+            <p>Automated native iOS and Android coverage with Appium and WebDriverIO, validated pilot and production builds, and created Kibana dashboards for faster investigation.</p>
+          </article>
+
+          <article class="impact-card reveal">
+            <div class="impact-index">04</div>
+            <p class="card-kicker">API quality engineering</p>
+            <h3>Designed an extensible Python/Behave API framework.</h3>
+            <p>Introduced environment-based configuration, retry handling, structured logging, reusable request/response utilities, negative testing, and data-driven scenarios.</p>
+          </article>
+        </div>
+
+        <div class="section-link reveal">
+          <a href="jobDuties.html">See how I approach quality engineering <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="experience">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>Built across industries.<br>Focused on outcomes.</h2>
+          </div>
+          <p>A career spanning enterprise software quality, public-sector modernization, financial services, publishing, manufacturing, and telecom infrastructure.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2022 — Present</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="role-heading"><div><h3>NTT DATA</h3><p>Senior Software Development Engineer in Test</p></div><span>Remote</span></div>
+              <p>Automation architecture and delivery leadership for public-sector modernization, mobile/web financial services, and API quality initiatives. Integrated automation with Azure DevOps Repos, pull requests, Pipelines, Boards, and Test Plans.</p>
+              <div class="project-strip"><span>Nevada DMV / CARRS</span><span>Wells Fargo mobile &amp; web</span><span>Nexa API automation</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2021 — 2022</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="role-heading"><div><h3>Capstone Publishers</h3><p>Quality Assurance Engineer</p></div><span>Edina, MN</span></div>
+              <p>Developed Cypress automation for customer-facing web applications and translated requirements, acceptance criteria, and release scope into dependable functional, regression, compatibility, and exploratory coverage.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2018 — 2021</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="role-heading"><div><h3>Altus Engineering</h3><p>QA Automation Engineer</p></div><span>Minneapolis, MN</span></div>
+              <p>Built Cypress and Selenium automation for manufacturing and predictive-maintenance applications, connected suites to Jenkins CI, and executed UI, API, SQL, cross-browser, smoke, and end-to-end testing.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2010 — 2018</div>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="role-heading"><div><h3>Telia</h3><p>Senior Core Network Engineer</p></div><span>Telecommunications</span></div>
+              <p>Led regional telecom operations, condition monitoring, maintenance, vendor coordination, and Ericsson/Nokia infrastructure projects—experience that still shapes my rigor, operational judgment, and systems mindset.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="expertise">
+      <div class="shell expertise-layout">
+        <div class="expertise-intro reveal">
+          <p class="eyebrow dark">Technical strengths</p>
+          <h2>Modern tools.<br>Durable engineering habits.</h2>
+          <p>I choose technology to fit the risk, team, and product—not the other way around.</p>
+          <a class="text-link" href="https://github.com/ardaka" target="_blank" rel="noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="expertise-groups">
+          <article class="expertise-group reveal">
+            <span class="group-number">01</span>
+            <div><h3>Automation</h3><p>C#/.NET · Playwright · Reqnroll/SpecFlow · xUnit · Selenium WebDriver · Cypress · WebDriverIO · Appium · Behave</p></div>
+          </article>
+          <article class="expertise-group reveal">
+            <span class="group-number">02</span>
+            <div><h3>Languages &amp; data</h3><p>C# · JavaScript · TypeScript · Python · Java · SQL · REST APIs · PostgreSQL · SQL Server · ETL / data quality</p></div>
+          </article>
+          <article class="expertise-group reveal">
+            <span class="group-number">03</span>
+            <div><h3>Delivery &amp; platforms</h3><p>Azure DevOps · Git · GitHub · GitLab · Bitbucket · Jenkins · Artifactory · CI/CD · Docker · AWS · Azure</p></div>
+          </article>
+          <article class="expertise-group reveal">
+            <span class="group-number">04</span>
+            <div><h3>Testing &amp; observability</h3><p>Web UI · legacy desktop · API · mobile · accessibility · Postman · Kibana · Elasticsearch · BrowserStack · Sauce Labs · AWS Device Farm</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ai-section">
+      <div class="shell ai-grid">
+        <div class="ai-visual reveal" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="ai-core">AI<span>+</span>QE</div>
+        </div>
+        <div class="ai-copy reveal">
+          <p class="eyebrow">AI-assisted. Engineer-accountable.</p>
+          <h2>Acceleration with traceability and judgment.</h2>
+          <p>I use Claude Code, GitHub Copilot, Cursor, and OpenAI Codex for framework scaffolding, test design, and code review—with generated output reviewed against business requirements, architecture standards, and real system behavior.</p>
+          <ul class="check-list">
+            <li>Human review stays in the loop</li>
+            <li>Business intent remains traceable</li>
+            <li>Maintainability beats novelty</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light education-section">
+      <div class="shell education-grid">
+        <div class="reveal">
+          <p class="eyebrow dark">Education &amp; growth</p>
+          <h2>Always learning. Always applying.</h2>
+        </div>
+        <div class="education-list reveal">
+          <article><span>Degree</span><h3>M.S. in Physics</h3><p>Satbayev University</p></article>
+          <article><span>2026 development</span><h3>AI, GenAI &amp; AWS coursework</h3><p>Agentic AI, prompt engineering, Azure OpenAI, ML lifecycle, data pipelines, workflows, and Amazon S3.</p></article>
+          <article><span>Specialized training</span><h3>Web &amp; mobile test automation</h3><p>Selenium automation and mobile testing with WebDriverIO.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="personal-band">
+      <div class="shell personal-inner reveal">
+        <p><span>Beyond the backlog</span> Drawing, cooking, and twisty puzzles keep curiosity—and patience—sharp.</p>
+        <a href="hobbies.html">A little more about me <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="shell contact-inner reveal">
+        <p class="eyebrow">Start a conversation</p>
+        <h2>Need quality engineering that creates clarity, not friction?</h2>
+        <p>Let’s talk about automation architecture, modernization, or the next complex product your team needs to ship with confidence.</p>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:ardak.akishev@yahoo.com">Email Ardak <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline-light" href="contact.html">Contact details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark">AA</span><span class="brand-text">Ardak Akishev<small>Senior SDET · Test Automation Architect</small></span></a></div>
+      <div class="footer-links"><a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a></div>
+      <div class="footer-links"><a href="https://github.com/ardaka" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/aakishev/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:ardak.akishev@yahoo.com">Email ↗</a></div>
+      <p class="copyright">© <span data-year></span> Ardak Akishev. Built with care.</p>
+    </div>
   </footer>
 </body>
-
 </html>

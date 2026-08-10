@@ -1,35 +1,59 @@
-var digitalClock = setInterval(headerTime, 1000)
+(() => {
+  const year = new Date().getFullYear();
+  document.querySelectorAll("[data-year]").forEach((element) => {
+    element.textContent = year;
+  });
 
-function headerDate() {
-  const options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric"
+  const header = document.querySelector("[data-header]");
+  const navToggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".primary-nav");
+
+  const closeMenu = () => {
+    if (!navToggle || !nav) return;
+    navToggle.setAttribute("aria-expanded", "false");
+    nav.classList.remove("is-open");
+    document.body.classList.remove("menu-open");
   };
-  const newdate = new Date().toLocaleDateString('en-US', options)
-  return newdate
-}
 
-function headerTime() {
-  var d = new Date()
-  var t = d.toLocaleTimeString('en-US')
-  var hour = d.getHours()
-  console.log (hour)
-  if (hour <12) {
-    hour = "Good Morning";
-  } else if (hour <17) {
-    hour = "Good Afternoon";
-  } else if (hour <24){
-    hour = "Good Evening";
-  } 
-  document.getElementById('time').innerHTML = t + " CST" + "  " + hour
-}
+  if (navToggle && nav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      nav.classList.toggle("is-open", !isOpen);
+      document.body.classList.toggle("menu-open", !isOpen);
+    });
 
-function footerAllright() {
-  const newdate = new Date()
-  year1 = newdate.getFullYear()
-  return year1
-}
-document.querySelector('#date').innerHTML = headerDate()
-document.querySelector('label.labelfooter').innerHTML = 'Copyright © ' + footerAllright()
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMenu();
+    });
+  }
+
+  if (header) {
+    const updateHeader = () => header.classList.toggle("is-scrolled", window.scrollY > 24);
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+  }
+
+  const reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach((element) => {
+      if (element.getBoundingClientRect().top < window.innerHeight * 0.95) {
+        element.classList.add("is-visible");
+      } else {
+        observer.observe(element);
+      }
+    });
+    document.body.classList.add("reveal-ready");
+  } else {
+    reveals.forEach((element) => element.classList.add("is-visible"));
+  }
+})();

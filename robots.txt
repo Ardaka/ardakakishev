@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ardaka.github.io/ardakakishev/sitemap.xml
